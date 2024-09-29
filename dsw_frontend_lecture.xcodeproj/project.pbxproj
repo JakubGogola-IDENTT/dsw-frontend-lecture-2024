@@ -6,10 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3B185D472CA80D2800CC845C /* lecture-1 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lecture-1";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXGroup section */
 		3B185D3E2CA80CE700CC845C = {
 			isa = PBXGroup;
 			children = (
+				3B185D472CA80D2800CC845C /* lecture-1 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -22,7 +31,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw_frotnend_lecture" */;
+			buildConfigurationList = 3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw_frontend_lecture" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -55,7 +64,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw_frotnend_lecture" */ = {
+		3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw_frontend_lecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B185D432CA80CE700CC845C /* Debug */,

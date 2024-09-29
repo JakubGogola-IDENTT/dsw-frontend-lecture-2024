@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.counter-container {
+  text-align: center;
+}
+
+#counter {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.even {
+  color: green;
+}
+
+.odd {
+  color: blue;
+}

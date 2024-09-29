@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        color: red; /* specificity 1 */
+      }
+
+      .highlight {
+        color: blue; /* specificity 10 */
+      }
+
+      #intro {
+        color: green; /* specificity 100 */
+      }
+    </style>
+  </head>
+  <body>
+    <p id="intro" class="highlight">This text will be green due to the highest specificity of ID.</p>
+  </body>
+</html>
