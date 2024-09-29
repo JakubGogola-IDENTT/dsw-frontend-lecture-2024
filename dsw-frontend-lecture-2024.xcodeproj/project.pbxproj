@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXFileReference section */
+		3BBFDF602CA99513008F42DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B185D472CA80D2800CC845C /* lecture-1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -18,6 +22,7 @@
 		3B185D3E2CA80CE700CC845C = {
 			isa = PBXGroup;
 			children = (
+				3BBFDF602CA99513008F42DF /* README.md */,
 				3B185D472CA80D2800CC845C /* lecture-1 */,
 			);
 			sourceTree = "<group>";
@@ -31,7 +36,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw_frontend_lecture" */;
+			buildConfigurationList = 3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw-frontend-lecture-2024" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -64,7 +69,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw_frontend_lecture" */ = {
+		3B185D422CA80CE700CC845C /* Build configuration list for PBXProject "dsw-frontend-lecture-2024" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B185D432CA80CE700CC845C /* Debug */,
