@@ -16,6 +16,11 @@
 			path = "lecture-1";
 			sourceTree = "<group>";
 		};
+		3B872E312CB45B5E004AB215 /* lecture-2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lecture-2";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXGroup section */
@@ -24,6 +29,7 @@
 			children = (
 				3BBFDF602CA99513008F42DF /* README.md */,
 				3B185D472CA80D2800CC845C /* lecture-1 */,
+				3B872E312CB45B5E004AB215 /* lecture-2 */,
 			);
 			sourceTree = "<group>";
 		};
