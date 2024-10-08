@@ -33,7 +33,7 @@ const getDogDescription = (breed) => {
     return `${breed}s are very friendly and loyal.`;
 };
 
-let description = getDogDescription("Bulldog");
+description = getDogDescription("Bulldog");
 console.log(description); // Output: "Bulldogs are very friendly and loyal."
 
 const getDogName = (name) => `This dog's name is ${name}.`;
