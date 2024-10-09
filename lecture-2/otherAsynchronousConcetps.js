@@ -13,7 +13,8 @@ function getBreedSize(breed) {
 
 getDogBreed()
     .then(breed => getBreedSize(breed))
-    .then(sizeDescription => console.log(sizeDescription));
+    .then(sizeDescription => console.log(sizeDescription))
+    .catch(error => console.error(`Error: ${error.message}`));
 // Output after 2 seconds: "Poodle - medium size"
 
 // try...catch
