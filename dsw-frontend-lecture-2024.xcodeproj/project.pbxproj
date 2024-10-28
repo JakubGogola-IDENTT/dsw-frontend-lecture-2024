@@ -16,6 +16,11 @@
 			path = "lecture-1";
 			sourceTree = "<group>";
 		};
+		3B3CC8402CD0279C005B398B /* lecture-3 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lecture-3";
+			sourceTree = "<group>";
+		};
 		3B872E312CB45B5E004AB215 /* lecture-2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "lecture-2";
@@ -27,6 +32,7 @@
 		3B185D3E2CA80CE700CC845C = {
 			isa = PBXGroup;
 			children = (
+				3B3CC8402CD0279C005B398B /* lecture-3 */,
 				3BBFDF602CA99513008F42DF /* README.md */,
 				3B185D472CA80D2800CC845C /* lecture-1 */,
 				3B872E312CB45B5E004AB215 /* lecture-2 */,
