@@ -15,7 +15,6 @@ export function Children() {
                 <h1>Title</h1>
                 <p>This is a card with a title and a paragraph.</p>
             </Card>
-
             <Card>
                 <button>Click Me</button>
             </Card>
