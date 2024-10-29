@@ -15,6 +15,13 @@ import {
     UseCallback,
     UseReducer,
     UseRef,
+    EventsHandling,
+    ConditionalRendering,
+    EventHandlingAndConditionalRendering,
+    Lists,
+    ListKeys,
+    ControlledForm,
+    DataFetching,
 } from './components';
 
 import './App.css';
@@ -47,6 +54,15 @@ function Root() {
             <Link to="/use-callback">useCallback</Link>
             <Link to="/use-reducer">useReducer</Link>
             <Link to="/use-ref">useRef</Link>
+            <Link to="/events-handling">Events Handling</Link>
+            <Link to="/conditional-rendering">Conditional Rendering</Link>
+            <Link to="/event-handling-and-conditional-rendering">
+                Event Handling and Conditional Rendering
+            </Link>
+            <Link to="/lists">Lists</Link>
+            <Link to="/list-keys">List Keys</Link>
+            <Link to="/controlled-form">Controlled Form</Link>
+            <Link to="/data-fetching">Data Fetching</Link>
         </div>
     );
 }
@@ -151,6 +167,62 @@ function App() {
                             element={
                                 <Example>
                                     <UseRef />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/events-handling"
+                            element={
+                                <Example>
+                                    <EventsHandling />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/conditional-rendering"
+                            element={
+                                <Example>
+                                    <ConditionalRendering />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/event-handling-and-conditional-rendering"
+                            element={
+                                <Example>
+                                    <EventHandlingAndConditionalRendering />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/lists"
+                            element={
+                                <Example>
+                                    <Lists />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/list-keys"
+                            element={
+                                <Example>
+                                    <ListKeys />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/controlled-form"
+                            element={
+                                <Example>
+                                    <ControlledForm />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/data-fetching"
+                            element={
+                                <Example>
+                                    <DataFetching />
                                 </Example>
                             }
                         />
