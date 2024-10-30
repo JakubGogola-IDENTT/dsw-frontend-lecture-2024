@@ -15,6 +15,7 @@ import {
     UseCallback,
     UseReducer,
     UseRef,
+    UseLayoutEffect,
     EventsHandling,
     ConditionalRendering,
     EventHandlingAndConditionalRendering,
@@ -63,6 +64,7 @@ function Root() {
             <Link to="/list-keys">List Keys</Link>
             <Link to="/controlled-form">Controlled Form</Link>
             <Link to="/data-fetching">Data Fetching</Link>
+            <Link to="/use-layout-effect">useLayoutEffect</Link>
         </div>
     );
 }
@@ -119,6 +121,14 @@ function App() {
                             element={
                                 <Example>
                                     <UseEffect />
+                                </Example>
+                            }
+                        />
+                        <Route
+                            path="/use-layout-effect"
+                            element={
+                                <Example>
+                                    <UseLayoutEffect />
                                 </Example>
                             }
                         />

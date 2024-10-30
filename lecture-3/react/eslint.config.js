@@ -28,7 +28,7 @@ export default [
         },
         plugins: {
             react,
-            reactHooks,
+            'react-hooks': reactHooks,
             prettier: prettierPlugin,
             import: importPlugin,
             '@stylistic': stylistic,
@@ -36,6 +36,7 @@ export default [
         rules: {
             ...js.configs.recommended.rules,
             ...react.configs.recommended.rules,
+            ...reactHooks.configs.recommended.rules,
             // ...stylistic.rules,
             'prettier/prettier': 'error',
             'react/react-in-jsx-scope': 'off', // React 17+ doesn't need React to be in scope
