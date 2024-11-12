@@ -1,15 +1,21 @@
-import {useReducer} from 'react';
+import {useState, useReducer} from 'react';
 
-const initialState = {count: 0};
+const INTIAL_TEMPERATURE = 10;
+
+const initialState = {temperatureUnits: 'Celsius', temperature: 10};
 
 function reducer(state, action) {
     switch (action.type) {
-        case 'increment':
-            return {count: state.count + 1};
-        case 'decrement':
-            return {count: state.count - 1};
+        case 'changeToCelsius':
+            return {temperatureUnits: 'Celsius'};
+        case 'changeToFahrenheit':
+            return {temperatureUnits: 'Fahrenheit'};
+        case 'changeToKelvin':
+            return {temperatureUnits: 'Kelvin'};
         case 'reset':
-            return {count: 0};
+            return initialState;
+        case 'incremetTemperature':
+            return {...state, temperature: state.temperature + 1};
         default:
             return state;
     }
@@ -20,8 +26,23 @@ export function UseReducer() {
 
     return (
         <div>
-            <p>Count: {state.count}</p>
-            <button onClick={() => dispatch({type: 'increment'})}>
+            <p>
+                Current temperature: {state.temperature}{' '}
+                {state.temperatureUnits}
+            </p>
+            <button onClick={() => dispatch({type: 'changeToCelsius'})}>
+                Set Celsius
+            </button>
+            <button onClick={() => dispatch({type: 'changeToFahrenheit'})}>
+                Set Fahrenheit
+            </button>
+            <button onClick={() => dispatch({type: 'changeToKelvin'})}>
+                Set Kelvin
+            </button>
+            <button onClick={() => dispatch({type: 'incremetTemperature'})}>
+                Increment temperature
+            </button>
+            {/* <button onClick={() => dispatch({type: 'increment'})}>
                 Increment
             </button>
             <button onClick={() => dispatch({type: 'decrement'})}>
@@ -30,7 +51,7 @@ export function UseReducer() {
             <button onClick={() => dispatch({type: 'reset'})}>Reset</button>
             <button onClick={() => dispatch({type: 'unkown-action'})}>
                 Unknown action
-            </button>
+            </button> */}
         </div>
     );
 }
