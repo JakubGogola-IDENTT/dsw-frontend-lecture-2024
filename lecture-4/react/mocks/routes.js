@@ -3,8 +3,10 @@ import {http, HttpResponse} from 'msw';
 const baseUrl = 'https://coffee.com';
 
 export const routes = [
-    http.get(`${baseUrl}/api/v1/coffees/`, () =>
-        HttpResponse.json({
+    http.get(`${baseUrl}/api/v1/coffees/`, async () => {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        return HttpResponse.json({
             coffees: [
                 {
                     id: 1,
@@ -44,8 +46,8 @@ export const routes = [
                     description: 'Espresso with velvety steamed milk.',
                 },
             ],
-        }),
-    ),
+        });
+    }),
     http.post(`${baseUrl}/api/v1/coffees/`, async ({request}) => {
         const {name, description} = await request.json();
 
