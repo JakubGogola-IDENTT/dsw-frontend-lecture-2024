@@ -11,6 +11,7 @@ import {
     NavigationSubPage,
     ProtectedPage,
     SettingsPage,
+    ApiPage
 } from './pages';
 import './App.css';
 import {AuthenticationGuard} from './components';
@@ -64,6 +65,7 @@ function App() {
                                 </AuthenticationGuard>
                             }
                         />
+                        <Route path="/api" element={<ApiPage />} />
                         <Route path="/error/:code" element={<ErrorPage />} />
                     </Routes>
                 </div>

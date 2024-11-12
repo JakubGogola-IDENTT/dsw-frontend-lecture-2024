@@ -22,6 +22,7 @@ export function HomePage() {
                 <Link to="/navigation-sub-page">Go to Navigation Sub Page</Link>
                 <Link to="/protected-sub-page">Go to Protected Sub Page</Link>
                 <Link to="/settings">Go to Settings Page</Link>
+                <Link to="/api">Go to API Page</Link>
             </nav>
         </div>
     );

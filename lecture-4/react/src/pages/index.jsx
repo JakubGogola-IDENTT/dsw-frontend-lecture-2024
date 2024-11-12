@@ -6,3 +6,4 @@ export * from './NavigationSubPage';
 export * from './ProtectedPage';
 export * from './ErrorPage';
 export * from './SettingsPage';
+export * from './ApiPage';
