@@ -11,7 +11,7 @@ import {
     NavigationSubPage,
     ProtectedPage,
     SettingsPage,
-    ApiPage
+    ApiPage,
 } from './pages';
 import './App.css';
 import {AuthenticationGuard} from './components';
@@ -29,13 +29,16 @@ Example.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
+// / - root
+// /posts - posts' list
+// /posts/456 - post details
 function App() {
     return (
         <Provider store={store}>
             <Router>
                 <div className="App">
                     <Routes>
-                        <Route path="/" element={<HomePage />} />
+                        <Route index path="/" element={<HomePage />} />
                         <Route path="/sub-page" element={<SubPage />} />
                         <Route
                             path="/parametrized-sub-page/:id"

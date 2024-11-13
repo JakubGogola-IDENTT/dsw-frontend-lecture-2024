@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import {CoffeeApiClient} from '../services/api';
 import {useNavigate} from 'react-router-dom';
-import { BrewCoffeeButton, CreateCoffeeButton } from '../components';
+import {BrewCoffeeButton, CreateCoffeeButton} from '../components';
 
 const apiClient = CoffeeApiClient.create();
 

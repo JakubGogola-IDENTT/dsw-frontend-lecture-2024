@@ -17,6 +17,7 @@ export const authenticationSlice = createSlice({
     },
 });
 
+// {type: string, payload: any?}
 export const {logIn, logOut} = authenticationSlice.actions;
 
 export const authenticationReducer = authenticationSlice.reducer;
