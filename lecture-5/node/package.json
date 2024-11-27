@@ -1,0 +1,15 @@
+{
+  "name": "node",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Set of examples how to use Node.js and connected tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
